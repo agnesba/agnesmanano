@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<!---Head of the documents with meta tags, stylesheet and icons--->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<title>Botticelli |Arts and Craft Shop</title>
+	<meta name="description" content="Botticelli Arts & Crafts  is a highstreet shop with all the supplies and needs for art." />
+	<meta name="keywords" content="Art Craft Painting Shop Stationery Botticelli" />
+	<link rel="shortcut icon" href="../business/pics/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="../business/css/style.css">
+	<link rel="stylesheet" href="../business/css/reset.css">
+	<link href="https://fonts.googleapis.com/css?family=Chivo|Lato|Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<!----Body of the document-->
+
+<body>
+	<!--- Full Wrap--->
+	<div id="wrapper">
+		<!----Header with navigation--->
+		<header id="header">
+			<nav class="navigation">
+				<ul>
+					<li><a href="../business/index.html" class="selected">Home</a></li>
+					<li><a href="../business/pages/artsandcrafts.html">Arts and Craft</a></li>
+					<li><a href="../business/pages/stationery.html">Stationery</a></li>
+					<li><a href="../business/pages/aboutus.html">About Us</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!----Main--->
+		<main id="main">
+			<h1>Welcome to Botticelli Arts and Craft</h1>
+			<h2>The one and only craft stop in Eltham. We pride ourselves of providing all the necessities and non necessities to make your life colourful</h2>
+			<img id="quotes" src="/business/pics/inspirationalquote.gif" alt="inspirational daily quote">
+			<div class="homepage">
+					<img src="../business/pics/botticelli-logo-two.png" alt="botticelli logo">
+				<div id="open-hours"></div>	
+			</div>
+		</main>
+		<!----Footer---->
+		<footer id="footer-info">
+			<div class="left-ft">
+				<div id="title-footer">
+					<h4>Our Social Media</h4>
+				</div>
+				<div class="footer-icons">
+					<a href="https://twitter.com/asengashun"><i class="fab fa-twitter-square"></i></a>
+					<a href="https://www.instagram.com/hdo.ghghns/"><i class="fab fa-instagram"></i></a>
+				</div>
+				<p>Botticelli Arts &amp; Craft © 2018.</p>
+			</div>
+			<div class="middle-ft">
+				<div id="title-footer">
+					<h4>Contact Details</h4>
+				</div>
+				<i class="fa fa-map-marker"></i>
+				<p>525, Eltham High Street,Eltham, London, SE9 1BJ</p>
+				<div>
+					<i class="fa fa-phone"></i>
+					<p> Call: (+44)(0) 208 564 5655</p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p>Email : <a href="mailto:info@botticelli.com ">info@botticelli.com </a></p>
+				</div>
+			</div>
+			<div class="right-ft">
+				<div id="title-footer">
+					<img src="/business/pics/rsz_botticelli-logo-one.png" alt="botticelli logo">
+				</div>
+				<p class="footer-links">
+					<a href="../business/index.html">Home</a>
+					&#9679;
+					<a href="../business/pages/stationery.html">Stationery</a>
+					&#9679;
+					<a href="../business/pages/artsandcrafts.html">Arts and Craft</a>
+					&#9679;
+					<a href="../business/pages/aboutus.html">About Us</a>
+					&#9679;
+				</p>
+			</div>
+		</footer>
+	</div>
+	<script src="../business/js/open-hours.js" charset="utf-8"></script>
+	<script>
+		const hours = {
+			"Monday": {
+				start: 1000,
+				end: 1800
+			},
+			"Tuesday": {
+				start: 1000,
+				end: 1800
+			},
+			"Wednesday": {
+				start: 1000,
+				end: 1900
+			},
+			"Thursday": {
+				start: 1000,
+				end: 1800
+			},
+			"Friday": {
+				start: 1000,
+				end: 1700
+			},
+			"Saturday": {
+				start: 1100,
+				end: 1700
+			},
+			"Sunday": {}
+		}
+		OpenHours.generateTime(hours)
+	</script>
+</body>
+
+</html>
