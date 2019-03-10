@@ -1,0 +1,426 @@
+/* This code is licensed for reuse under the MIT license https://github.com/SamsungInternet/examples/blob/master/LICENSE
+*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*CSS specifications*/
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+}
+.container> header,
+footer,
+aside,
+main {
+    border: 2px;
+    border-radius: 2 px;
+    background-color: #11ffee00;
+    padding: 1em;
+    color: white;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(200px, auto);
+}
+.container {
+    animation: colors 30s linear infinite;
+    transition: 5s ease-in-out;
+}
+header {
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+main {
+    grid-column: 1 / 5;
+    grid-row: 2 / 5;
+}
+aside {
+    grid-column: 1 / 5;
+    grid-row: 5;
+    text-align: right;
+}
+footer {
+    grid-column: 1 / 5;
+    grid-row: 6;
+    text-align: center;
+}
+body,
+header,
+footer,
+aside,
+{
+    margin: 0;
+    padding: 0
+}
+
+/*Backround colour animation recreated using sample code from code pen/*/
+
+/*original code from https://codepen.io/vivekragunathan/pen/XpBgxL?page=3& */
+@keyframes colors {
+    0%,
+    100% {
+        background-color: #F3E0EC;
+    }
+    
+    20% {
+        background-color: #EAD5E6;
+    }
+    
+    40% {
+        background-color: #E6EFE9;
+    }
+    
+    60% {
+        background-color: #E6EFE9;
+    }
+    
+    80% {
+        background-color: #DCD6F7;
+    }
+    
+    90% {
+        background-color: #A6B1E1;
+    }
+}
+
+/*Navigation rules*/
+nav {
+    width: 100%;
+    padding: 5px 5px;
+    text-align: center;
+    font-family: 'Nanum Pen Script', cursive, 'Open Sans', sans-serif, Arial, sans-serif;
+    font-size: 2em;
+}
+nav li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+nav li a {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 2.5em;
+    color: #b1a2d9;
+}
+nav a:hover {
+    color: rgba(0, 0, 0, 0.5);
+    text-shadow: 3px 3px 0 #2F004F;
+    font-size: 2.5em;
+}
+
+/*CSS BTS LOGO Homepage Code inspired by Erin Hughes on code pen https://codepen.io/erzulu/pen/ReZBmg
+*/
+.bts-logo-container {
+    position: absolute;
+    left: 47%;
+    top: 77%;
+    transform: translateX(-50%) translateY(-30%);
+}
+.bts-logo::before {
+    position: absolute;
+    margin-left: -19px;
+    border-bottom: 15px solid black;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    width: 70px;
+    transform: rotate(90deg);
+    content: "";
+}
+.bts-logo::after {
+    position: absolute;
+    border-bottom: 15px solid black;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    width: 70px;
+    transform: rotate(-90deg);
+    content: "";
+}
+
+/*CSS ARMY LOGO Homepage Code inspired by Erin Hughes on code pen https://codepen.io/erzulu/pen/ReZBmg
+*/
+.army-logo::before {
+    position: absolute;
+    margin-left: 75px;
+    border-bottom: 15px solid black;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    width: 70px;
+    transform: rotate(90deg);
+    content: "";
+}
+.army-logo::after {
+    position: absolute;
+    left: 10%;
+    margin-left: 55px;
+    border-bottom: 15px solid black;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    width: 70px;
+    transform: rotate(-90deg);
+    content: "";
+}
+
+/*Fonts Styling*/
+h1 {
+    font-family: 'Nanum Pen Script', cursive, 'Open Sans', sans-serif, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 4em;
+    color: #5f0a87;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-align: center;
+    padding-bottom: 5px
+}
+h2 {
+    font-family: 'Nanum Brush Script', cursive, 'Open Sans', sans-serif, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 3.5em;
+    color: #b1a2d9;
+    text-align: left;
+    padding-bottom: 10px;
+}
+h3 {
+    font-family: 'Nanum Brush Script', cursive, 'Open Sans', sans-serif, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 3em;
+    color: #b1a2d9;
+    text-align: left;
+}
+h4 {
+    font-family: 'Nanum Brush Script', cursive, 'Open Sans', sans-serif, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 3em;
+    color: #b1a2d9;
+    text-align: left;
+}
+h5 {
+    font-family: 'Nanum Brush Script', cursive, 'Open Sans', sans-serif, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 3em;
+    color: #A5B5BF;
+    text-align: auto;
+}
+p {
+    font-family: 'Nanum Brush Script', cursive, 'Open Sans', sans-serif, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    color: #685f74;
+    text-align: auto;
+    padding: 5px 0px 0px 5px;
+}
+p:first-of-type:first-letter {
+    font-family: 'Sedgwick Ave', cursive, 'Open Sans', sans-serif, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    color: white;
+    word-spacing: 0.5em;
+}
+a {
+    list-style-type: none;
+    text-decoration: none;
+    color: #b1a2d9;
+}
+a:hover {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* Styling paragraph*/
+.Authorone {
+    font-family: 'Nanum Brush Script', cursive, 'Open Sans', sans-serif, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    color: #a4508b;
+    text-indent: 100px;
+    margin-bottom: 25px;
+}
+.Authortwo {
+    font-family: 'Nanum Brush Script', cursive, 'Open Sans', sans-serif, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    color: #c191a1;
+    text-indent: 100px;
+    margin-bottom: 25px;
+}
+.Pressone {
+    font-family: 'Sedgwick Ave', cursive, 'Open Sans', sans-serif, Arial, sans-serif;
+    font-weight: 200;
+    font-size: 2.5em;
+    line-height: 1.5em;
+    color: #5f0a87;
+    text-align: right;
+    text-indent: 50px;
+}
+.Presstwo {
+    font-family: 'Sedgwick Ave', cursive, 'Open Sans', sans-serif, Arial, sans-serif;
+    font-weight: 200;
+    font-size: 2.5em;
+    line-height: 1.5em;
+    color: #5f0a87;
+    text-align: right;
+    text-indent: 50px;
+    padding: 5px 0px 0px 5px;
+}
+
+/*Media Queries standard format by Gokulakrishnan Kalaikovan https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488*/
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+    .container> header,
+    footer,
+    aside,
+    main {
+        grid-column: span 1;
+    }
+}
