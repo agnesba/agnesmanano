@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>Agnes Manano ¬ MA Web Design</title>
+    <meta name="description" content="Agnes Manano is a Website created to showcase the work created whilst studying Ma Web Design and Content Planning at the University of Greenwich">
+    <meta name="keywords" content="University Coursework Web Design Content Planning">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/reset.css" rel="reset">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2|Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--- Full Wrap--->
+    <div id="wrapper">
+        <!----Header with navigation--->
+        <header id="header">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="../index.html"> HOme </a> </li>
+                    <li><a href="../aboutme/index.html">About Me</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!----Main Page-->
+
+        <main id="main">
+            <h1>COMING SOON</h1>
+            
+          <!----Countdown CODE Edited from Code Pen User Matt Smith https://codepen.io/AllThingsSmitty/pen/JJavZN -->   
+            <ul>
+                <li><span id="days"></span>Days</li>
+                <li><span id="hours"></span>Hours</li>
+                <li><span id="minutes"></span>Minutes</li>
+                <li><span id="seconds"></span>Seconds</li>
+            </ul>
+        </main>
+        <!----Footer---->
+        <footer id="footer-info">
+            <p><strong>&#8251;</strong> Agnes Manano &#169; 2018</p>
+        </footer>
+    </div>
+
+    <script>
+        const second = 1000,
+            minute = second * 60,
+            hour = minute * 60,
+            day = hour * 24;
+
+        let countDown = new Date('Mar 22, 2019 00:00:00').getTime(),
+            x = setInterval(function() {
+
+                let now = new Date().getTime(),
+                    distance = countDown - now;
+
+                document.getElementById('days').innerText = Math.floor(distance / (day)),
+                    document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+                    document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+                    document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+
+            }, second)
+
+    </script>
+</body>
+
+</html>
