@@ -1,0 +1,346 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* End of reset */
+
+/*Grid Layout sizing differen aspect of the grid for Main page and child pages*/
+
+* {
+    box-sizing: content-box;
+}
+
+.wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.wrapper > div {
+    border: none;
+    border-radius: 2px;
+    background-color: #aed5e7;
+    padding: 1em;
+}
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+/* Grid For object pages*/
+.one {
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+.two {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+}
+
+.three {
+    grid-column: 1;
+    grid-row: 2 / 5;
+}
+
+.four {
+    grid-column: 3;
+    grid-row: 3;
+    width: 350px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/*grid for design object and websites home page*/
+
+
+.oneone {
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+
+.twotwo {
+    grid-column: 1;
+    grid-row: 2/4;
+}
+
+.threethree {
+    grid-column: 2;
+    grid-row: 2 / 4;
+}
+
+.fourfour {
+    grid-column: 3;
+    grid-row: 2/4;
+}
+
+/*grid for Three Design Homepage*/
+
+.due {
+    grid-column: 1;
+    grid-row: 2/4;
+}
+
+.tre {
+    grid-column: 3;
+    grid-row: 2 / 4;
+}
+
+
+/*======= Style Rules =======*/
+
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Vollkorn', Calibri, Arial, Helvetica, serif;
+    font font-weight: 400;
+    color: black;
+    background-image: url(../pics/bg-min.jpg);
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    width: 80%;
+    min-width: 450px;
+    max-width: 1000px;
+    padding: 4.5em 3.0em 4.0em;
+    margin: 1.5em auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'Vollkorn', Calibri, Arial, Helvetica, serif;
+    color: black;
+}
+
+h1 {
+    font-size: 4.0em;
+    line-height: 1.2;
+    color: black;
+}
+
+body h2 {
+    font-size: 2em;
+    line-height: 1.2em;
+    margin-top: 0.4em;
+    text-align: center;
+
+
+}
+
+p,
+li {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin-top: 0.4em;
+}
+
+p + p {
+
+    margin-top: 1.6em;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+nav ul + li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: black;
+}
+
+nav li a {
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: darkgray;
+    color: royalblue;
+}
+
+div a:hover {
+    background: darkgray;
+    color: royalblue;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* responsiveness */
+@media (max-width: 480px) {
+
+    .two,
+    .four,
+    .oneone,
+    .twotwo,
+    .threethree .fourfour {
+        grid-column: 1 / span 5;
+    }
+
+    .one,
+    .twotwo,
+    .three {
+        grid-column: 2 / span 2;
+    }
+
+}
