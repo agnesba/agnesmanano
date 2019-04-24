@@ -1,0 +1,494 @@
+        /* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*-------------------------------------------- End of reset -----------------------------------*/
+
+
+/*Grid Layout sizing different aspect of the grid for Main page and child pages*/
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    grid-template-areas: 'header header header' 'main main main' 'footer footer footer';
+}
+
+footer> .footer-group {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4em;
+}
+
+.wrapper> header {
+    border: 10px;
+    border-radius: 2 px;
+    background-color: #11ffee00;
+    padding-bottom: 1em;
+}
+
+
+/*-------------------------Navigation---------------------------------
+-----------*/
+
+header {
+    position: absolute;
+    width: 100%;
+}
+
+navigation {
+    margin-top: 10px;
+    width: 100%;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    font-family: 'Chivo', sans-serif, 'Open Sans', sans-serif, 'Lato', sans-serif, "Times New Roman", serif;
+}
+
+navigation li {
+    display: inline-block;
+}
+
+navigation a {
+    color: #190B28;
+    text-shadow: 1px 1px 2px #000000;
+    font-size: 2em;
+    margin-left: 20px;
+    font-weight: 500;
+    line-height: 2;
+    list-style-type: none;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+navigation a:hover,
+navigation a.active {
+    color: #bcbcbc;
+}
+
+navigation a.selected {
+    border-bottom: 2px solid #666666;
+    padding-bottom: 6px;
+}
+
+
+/*======= Style Rules =======*/
+
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-image: url(/pics/background.jpg);
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    width: 80%;
+    background-color: #ffffff;
+    padding: 3em 1.5em 1.5em 3em;
+    margin: 1em auto;
+    font-family: 'Chivo', sans-serif, 'Open Sans', sans-serif, 'Lato', sans-serif, "Times New Roman", serif;
+}
+
+main> h1 {
+    font-size: 3.5em;
+    line-height: 1em;
+    text-align: center;
+    color: #000;
+    font-family: 'Chivo', sans-serif, 'Open Sans', sans-serif, 'Lato', sans-serif, "Times New Roman", serif;
+    font-weight: 500;
+}
+
+main> h2 {
+    font-size: 2em;
+    line-height: 1.2em;
+    margin-top: 0.4em;
+    text-align: center;
+    font-family: 'Lato', sans-serif, "Times New Roman", serif;
+    font-weight: 400;
+}
+
+main> h3 {
+    font-size: 1.5em;
+    line-height: 1em;
+    text-align: center;
+    font-family: 'Lato', sans-serif, "Times New Roman", serif;
+    font-weight: 300;
+}
+
+
+}
+main> h4,
+h5,
+h6,
+{
+    font-family: 'Chivo', sans-serif, 'Open Sans', sans-serif, 'Lato', sans-serif, "Times New Roman", serif;
+    font-size: 2em;
+    line-height: 1.2em;
+    margin-top: 0.4em;
+}
+main> p,
+li {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-family: 'Chivo', sans-serif, 'Open Sans', sans-serif, 'Lato', sans-serif, "Times New Roman", serif;
+    margin-top: 0.4em;
+}
+main p+ p {
+    margin-top: 1.6em;
+}
+main h1+ h2 {
+    margin-top: 1.0em;
+}
+main h3 {
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+}
+.homepage {
+    display: flex;
+    justify-content: space-around;
+}
+#open-hours {
+    float: right;
+    line-height: 2em;
+}
+#quotes,
+#range {
+    width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+/*-------------------------Footer------------------------------------------------*/
+footer {
+    background-color: #FDCFC3;
+    font-family: 'Lato', sans-serif, "Times New Roman", serif;
+    width: 100%;
+    font size: 1.5em;
+}
+footer> h4 {
+    font-family: 'Lato', sans-serif, "Times New Roman", serif;
+    margin: 0;
+    font size: 2.5em;
+    font-weight: 900;
+}
+
+/*Left side footer*/
+.left-ft {}
+.footer-icons {
+    margin-top: 15px;
+}
+.footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 2px;
+    font-size: 1em;
+    color: #000000;
+    text-align: center;
+    margin-right: 3px;
+    margin-bottom: 5px
+}
+
+/*Right Side Footer*/
+.right-ft {}
+.footer-links {
+    color: #190B28;
+    margin: 10px 0 10px;
+    padding: 0;
+}
+.footer-links> a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*Middle Footer */
+.middle-ft {}
+.middle-ft i {
+    font-size: 1em;
+    width: 33px;
+    height: 15px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 15px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+.fa-envelope,
+.fa-map-marker,
+.fa-phone,
+{
+    font-size: 2em;
+    line-height: 38px;
+}
+.middle-ft p,
+a {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    text-decoration: none
+}
+.fa-twitter-square,
+.fa-instagram {
+    font-size: 2em;
+    line-height: 38px;
+}
+.middle-ft> #title-footer-middle {
+    font-size: 1em;
+    font-weight: 500;
+    font-style: italic;
+}
+.right-ft> #title-footer-right {
+    font-size: 1em;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.left-ft> #title-footer-left {
+    font-size: 1em;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/*------------ Google Map-----------------------------*/
+.maps {
+    overflow: hidden;
+    padding-bottom: 50%;
+    position: relative;
+    height: 0;
+}
+.maps iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/*--------------------ARTS AND CRAFTS gallery and School and Supplies Gallery----------------------*/
+.artsCrafts img {
+    float: left;
+    width: 23.5%;
+    margin: 1em 0em 0em 1em;
+    text-align: center;
+}
+.artsCrafts:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*---------------------Media Queries ----------------------------------*/
+@media (max-width: 700px) {
+    .wrapper {
+        grid-template-areas: 'main' 'header' 'footer';
+    }
+    
+    .footer-group {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+    
+    @media only screen and (min-width: 320px) and (max-width: 768px) {
+        main> h1 {
+            font-size: 1.5em;
+        }
+        main> h2,
+        {
+            font-size: 1.2em;
+        }
+        main> h3,
+        h4 {
+            font-size: 1em;
+        }
+        main> p,
+        {
+            font-size: 0.5em;
+        }
+        navigation {
+            margin-top: 2px;
+            width: 100%;
+            padding: 1px 5px 1px 5px;
+            text-align: center;
+        }
+        navigation li {
+            display: flex;
+        }
+        navigation a {
+            color: #190B28;
+            text-shadow: 1px 1px 2px #000000;
+            font-size: 1.5em;
+            margin-left: 10px;
+            font-weight: 200;
+            line-height: 1em;
+            list-style-type: none;
+            text-decoration: none;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        navigation a:hover,
+        navigation a.active {
+            color: #bcbcbc;
+        }
+        navigation a.selected {
+            border-bottom: 2px solid #666666;
+            padding-bottom: 6px;
+        }
+        .footer-group {
+            -webkit-flex-direction: column;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 1em;
+        }
+    }
+    
+    @media (max-width: 500px) {

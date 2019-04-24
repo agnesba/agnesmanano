@@ -1,0 +1,2 @@
+[20-Feb-2019 15:21:10 Europe/London] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user '******'@'localhost' (using password: YES) in /home/agnesman/public_html/articles/index.php on line 15
+[20-Feb-2019 15:39:18 Europe/London] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user '******'@'localhost' (using password: YES) in /home/agnesman/public_html/articles/index.php on line 15
