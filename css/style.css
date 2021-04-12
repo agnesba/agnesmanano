@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html,
 body,
 div,
@@ -92,10 +91,7 @@ video {
     font: inherit;
     vertical-align: baseline;
 }
-
-
 /* HTML5 display-role reset for older browsers */
-
 article,
 aside,
 details,
@@ -109,21 +105,17 @@ nav,
 section {
     display: block;
 }
-
 body {
     line-height: 1;
 }
-
 ol,
 ul {
     list-style: none;
 }
-
 blockquote,
 q {
     quotes: none;
 }
-
 blockquote:before,
 blockquote:after,
 q:before,
@@ -131,71 +123,51 @@ q:after {
     content: '';
     content: none;
 }
-
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
-
 /*-------------------------------------------- End of reset -----------------------------------*/
-
-
 /* End of reset */
-
-
 /*Grid Layout sizing differeny aspect of the grid for Main page and child pages*/
-
-
 /*Grid Layout Homepage*/
-
 * {
     box-sizing: border-box;
 }
-
 .wrapper {
     max-width: 1080px;
     margin: 0 auto;
 }
-
-.wrapper> .header,
-{
+.wrapper > .header
+    {
     border: 2px;
     border-radius: 2 px;
     background-color: #11ffee00;
     padding: 1em;
 }
-
 .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
 }
-
 .header {
     grid-column: 1 / 4;
     grid-row: 1;
 }
-
 .main {
     grid-column: 1 / 4;
     grid-row: 2 / 5;
 }
-
 .footer {
     grid-column: 1 / 4;
     grid-row: 5/5;
 }
-
-
 /*-------------------------Navigation------------------------------*/
-
 .header {
     position: absolute;
     width: 100%;
 }
-
 .navigation {
     margin-top: 20px;
     width: 100%;
@@ -203,11 +175,9 @@ table {
     text-align: center;
     font-family: 'Open Sans', sans-serif, "Times New Roman", serif;
 }
-
 .navigation li {
     display: inline-block;
 }
-
 .navigation a {
     color: #fff;
     text-shadow: 1px 1px 2px black;
@@ -220,15 +190,11 @@ table {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-
 .navigation a:hover,
 .navigation a.active {
     color: #bcbcbc;
 }
-
-
 /*======= Style Rules =======*/
-
 html,
 body {
     padding: 0px;
@@ -236,14 +202,12 @@ body {
     width: 100%;
     height: 100%;
 }
-
 body {
     background-image: url(../pics/bg-min.jpg);
     background-repeat: repeat-x;
     background-size: cover;
     background-attachment: fixed;
 }
-
 #main {
     width: 80%;
     background-color: white;
@@ -251,8 +215,7 @@ body {
     margin: 1em auto;
     font-family: 'Exo 2', 'Open Sans', sans-serif, "Times New Roman", serif;
 }
-
-#main> h1 {
+#main > h1 {
     font-size: 3.5em;
     line-height: 2em;
     text-align: center;
@@ -260,8 +223,7 @@ body {
     font-family: 'Exo 2', 'Open Sans', sans-serif, "Times New Roman", serif;
     font-weight: 500;
 }
-
-#main> h2 {
+#main > h2 {
     font-size: 2em;
     line-height: 1.2em;
     margin-top: 0.4em;
@@ -269,41 +231,37 @@ body {
     font-family: 'Open Sans', sans-serif, "Times New Roman", serif;
     font-weight: 400;
 }
-
-#main> h3 {
+#main > h3 {
     font-size: 1.5em;
     line-height: 1em;
     text-align: center;
     font-family: 'Open Sans', sans-serif, "Times New Roman", serif;
     font-weight: 300;
 }
-
-
-}
-#main> h4,
+#main > h4,
 h5,
-h6,
+h6
 {
     font-family: 'Open Sans', sans-serif, "Times New Roman", serif;
     font-size: 2em;
     line-height: 1.2em;
     margin-top: 0.4em;
 }
-#main> p,
+#main > p,
 li {
     font-size: 1.2em;
     line-height: 1.5em;
     font-family: 'Exo 2', 'Open Sans', sans-serif, "Times New Roman", serif;
     margin-top: 0.4em;
 }
-#main p+ p {
+#main p + p {
     margin-top: 1em;
 }
 .homepage {
     display: inherit;
     margin: 25px;
 }
-#main li> a {
+#main li > a {
     color: #000;
     font-size: 1em;
     margin-left: 20px;
@@ -313,22 +271,20 @@ li {
     line-height: 0.10em;
     text-indent: 1.5em;
 }
-#main li> a:hover,
-#main li> a.active {
+#main li > a:hover,
+#main li > a.active {
     color: #bcbcbc;
 }
-
 /*-------------------------Footer------------------------------------------------*/
 #footer-info {
     background-color: #fff;
     font-family: 'Exo 2', 'Open Sans', sans-serif, "Times New Roman", serif;
     padding: 25px 25px;
-    font size: 1.5em;
+    font-size: 1.5em;
     vertical-align: top;
     width: 100%;
     text-align: center;
 }
-
 /* responsiveness */
 @media (max-width: 480px) {
     main,
